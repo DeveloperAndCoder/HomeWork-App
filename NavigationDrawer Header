@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="160dp"
+    android:background="@drawable/side_nav_bar">
+
+    <ImageView
+        android:id="@+id/header_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+
+        android:layout_centerVertical="true"
+        android:layout_gravity="center_horizontal"
+        android:src="@mipmap/ic_launcher" />
+
+    <TextView
+        android:id="@+id/header_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/header_icon"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/header_icon"
+        android:layout_toEndOf="@+id/header_icon"
+        android:gravity="center_horizontal"
+        android:paddingTop="10dp"
+        android:text="@string/made_by_anurag_shah"
+        android:textColor="#FFFFFF"
+        android:textSize="15sp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:gravity="center_horizontal"
+        android:paddingBottom="10dp"
+        android:text="@string/all_copyright_reserved"
+        android:textColor="#FFFFFF"
+        android:textSize="10sp" />
+
+    <ToggleButton
+        android:id="@+id/toggle"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_margin="16dp"
+        android:alpha="0.54"
+        android:background="@drawable/toggle_expand_collapse"
+        android:gravity="center"
+        android:onClick="changestate"
+        android:textOff="@null"
+        android:textOn="@null" />
+</RelativeLayout>
